@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <locale>
 using namespace std;
 
 vector<vector<double>> getMatrixMinor(vector<vector<double>> m, int i, int j) {
@@ -20,6 +21,7 @@ double getMatrixDeterminant(vector<vector<double>> m) {
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     vector<string> xyzt = {"x", "y", "z", "t"};
     vector<vector<double>> m = {
         {4.8, 12.5, -6.3, -9.7},
